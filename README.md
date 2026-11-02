@@ -1,3 +1,5 @@
 # Recall
 
-Topic-based revision cards, edited in Google Sheets and published with GitHub Pages.
+Topic-based revision cards with a Google Sheets editing workflow.
+
+See [publishing setup](google-sheets/SETUP.md).
