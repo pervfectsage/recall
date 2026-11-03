@@ -40,3 +40,11 @@ header{justify-content:space-between;gap:20px;padding-top:16px;padding-bottom:14
 .toolbar{flex-wrap:wrap}.toolbar-chapter{flex:0 0 100%;margin:0 0 2px;text-align:left;line-height:1.5}.toolbar .filter.picker{flex:1;min-width:0}@media(max-width:600px){.toolbar-chapter{font-size:8px;letter-spacing:1px}.toolbar .filter.picker{flex:1 1 100%}.toolbar .topic-filter.picker{flex:1 1 calc(100% - 135px)}}
 
 header .toolbar-chapter{flex:1;margin:0;text-align:center;font-size:10px;letter-spacing:1px}header{align-items:center}@media(max-width:600px){header{flex-wrap:wrap}header .toolbar-chapter{order:3;flex:1 1 100%;font-size:8px;text-align:left;margin-top:2px}}
+
+/* Card navigation */
+.nav{display:grid;place-items:center;width:48px;height:48px;top:calc(50% - 24px);padding:0;border:1px solid #dedfec;border-radius:50%;background:#faf9f6;color:var(--accent);box-shadow:0 3px 12px #24284308;transition:background .18s,border-color .18s,box-shadow .18s,transform .18s;touch-action:manipulation}
+.nav svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.nav:hover:not(:disabled){background:#eeeffa;border-color:#b3b7df;box-shadow:0 5px 16px #424a9d16;transform:translateY(-1px)}
+.nav:active:not(:disabled){transform:scale(.95);box-shadow:0 1px 5px #424a9d10}
+.nav:disabled{opacity:.25;box-shadow:none}
+@media(max-width:600px){.nav{width:36px;height:44px;top:calc(50% - 22px);border:1px solid #dedfec;background:#faf9f6}.nav svg{width:20px;height:20px}.prev{left:-39px}.next{right:-39px}}
